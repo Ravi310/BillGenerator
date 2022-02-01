@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Generator</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="">
+            <div>
+                <label for="amount">How much was your bill?</label>
+                <br>
+                <input type="number" id="amount">
+            </div>
+            <div>
+                <label for="tipPercent">How was the service?</label>
+                <br>
+                <br>
+                <select name="" id="tipPercent">
+                    <option value="" disabled selected>Choose Service</option>
+                    <option value="20">Excellent-20%</option>
+                    <option value="10">Good-10%</option>
+                    <option value="5">Average-5%</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="people">How many people are sharing the bill?</label>
+                <br>
+                <input type="number" id="people">
+            </div>
+        </form>
+        <br>
+        <button id="submit">
+            Calculate
+        </button>
+        <br>
+        <br>
+        <div id="tiA">
+            <label for="tipAmount">Tip Amount:</label>
+            <br>
+            <input type="number" id="tipAmount" disabled>
+        </div>
+        <div id="toA">
+            <label for="totalAmount">Total Bill Amount:</label>
+            <br>
+            <input type="number" id="totalAmount" disabled>
+        </div>
+        <div id="pP">
+            <label for="perPerson">PerHead Bill:</label>
+            <br>
+            <input type="number" id="perPerson" disabled>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
